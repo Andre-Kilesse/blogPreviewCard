@@ -18,7 +18,7 @@ body{
     justify-content: center;
 }
 
-.card{
+article{
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
     border: 1px solid black;
@@ -32,26 +32,31 @@ body{
     padding: 18px 21px 20px 21px;
 }
 
-.card p{
-    font-size: 16px;
-}
-
-.card h2{
-    font-weight: 800;
-}
-
-.card h2:hover{
-    color:hsl(47, 88%, 63%);
-    cursor: pointer;
-}
-
-.card img{
+article img{
     max-width: 100%;
     border-radius: 15px;
 }
 
-.textWtBg{
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1{
+    font-weight: 800;
+    display: flex;
+    order: 2; /* inverte com o h2*/
+}
+
+h1:hover{
+    color:hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+article h2{
     background-color: hsl(47, 88%, 63%);
+    font-size: 1.1rem;
     padding: 5px;
     border-radius: 5px;
     font-weight: bold;
@@ -59,20 +64,28 @@ body{
     text-align: center;
 }
 
+article p{
+    font-size: 1rem;
+}
+
 .bolder{
     font-weight: bolder;
 }
 
-.cardFooter{
+.grey{
+    color: hsl(0, 0%, 42%);
+}
+
+footer{
     display: flex;
     flex-direction: row;
 }
 
-.cardFooter img{
+footer img{
     max-width: 40px;
 }
 
-.cardFooter p{
+footer p{
     display: flex;
     margin-left: 8px;
     margin-top: 10px;
